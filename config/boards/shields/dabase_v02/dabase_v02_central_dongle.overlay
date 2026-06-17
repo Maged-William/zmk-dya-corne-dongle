@@ -3,16 +3,9 @@
 #include <input/processors.dtsi>
 #include <input/processors/runtime-input-processor.dtsi>
 
-/ {
-    // Hijack the inherited physical kscan and turn it into the mock kscan
-    kscan {
-        compatible = "zmk,kscan-mock";
-        columns = <0>;
-        rows = <0>;
-        events = <>;
-    };
-
-    chosen {
-        zmk,kscan = &kscan;
-    };
+&kscan0 {
+    compatible = "zmk,kscan-mock";
+    columns = <0>;
+    rows = <0>;
+    events = <>;
 };
