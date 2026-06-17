@@ -1,0 +1,16 @@
+file_format: "1"
+id: dabase_v02
+name: Dabase V0-2
+url: https://github.com/Maged-William/zmk-dya-corne-dongle
+type: shield
+requires: [pro_micro]
+features:
+  - keys
+  - display
+outputs:
+  - usb
+  - ble
+siblings:
+  - dabase_v02_peripheral_left
+  - dabase_v02_peripheral_right
+  - dabase_v02_central_dongle
