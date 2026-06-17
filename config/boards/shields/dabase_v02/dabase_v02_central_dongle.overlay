@@ -5,6 +5,12 @@
 #include <input/processors.dtsi>
 #include <input/processors/runtime-input-processor.dtsi>
 
+/ {
+    // Completely wipe out the encoder and sensor definitions for the dongle
+    /delete-node/ encoder_left;
+    /delete-node/ sensors;
+};
+
 &kscan0 {
     compatible = "zmk,kscan-mock";
     /delete-property/ wakeup-source;
