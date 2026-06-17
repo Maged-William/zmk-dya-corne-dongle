@@ -10,11 +10,11 @@ include:
   # - board: nice_nano_v2
   #   shield: eyeslash_corne_peripheral_right nice_view_custom
 
-  - board: seeeduino_xiao
+  - board: xiao_ble
     shield: dabase_v02_central_dongle
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
-    artifact-name: dabase_v02_central_dongle_seeeduino_xiao
+    artifact-name: dabase_v02_central_dongle_xiao_ble
   - board: nice_nano_v2
     shield: dabase_v02_central_dongle
     snippet: studio-rpc-usb-uart
@@ -27,5 +27,5 @@ include:
 
   - board: nice_nano_v2
     shield: settings_reset
-  - board: seeeduino_xiao
+  - board: xiao_ble
     shield: settings_reset
